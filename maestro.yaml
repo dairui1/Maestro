@@ -1,0 +1,6 @@
+devCommand: pnpm run dev
+portRange:
+  start: 3000
+  end: 4000
+autoConfirm: false
+defaultModel: claude
