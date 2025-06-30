@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "dist/index.js",
   "bin": {
-    "maestro": "./dist/cli.js"
+    "maestro": "./dist/cli.js",
+    "m": "./dist/m.js"
   },
   "scripts": {
     "build": "tsc",

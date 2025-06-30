@@ -13,6 +13,11 @@ import { createAutoCommand } from './commands/auto';
 import { createMergeCommand } from './commands/merge';
 import { createDiffCommand } from './commands/diff';
 import { createMonitorCommand } from './commands/monitor';
+import { createPauseCommand } from './commands/pause';
+import { createResumeCommand } from './commands/resume';
+import { createCommitCommand } from './commands/commit';
+import { createTUICommand } from './commands/tui';
+import { createReviewCommand } from './commands/review';
 import { ConfigManager } from './lib/config/config-manager';
 import chalk from 'chalk';
 
@@ -39,6 +44,11 @@ async function main() {
   program.addCommand(createMergeCommand());
   program.addCommand(createDiffCommand());
   program.addCommand(createMonitorCommand());
+  program.addCommand(createPauseCommand());
+  program.addCommand(createResumeCommand());
+  program.addCommand(createCommitCommand());
+  program.addCommand(createTUICommand());
+  program.addCommand(createReviewCommand());
 
   // Hook to check config before command execution
   program.hook('preAction', async (thisCommand) => {

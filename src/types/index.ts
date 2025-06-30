@@ -5,7 +5,7 @@ export interface AgentSession {
   port: number;
   worktreePath: string;
   tmuxSession: string;
-  status: 'active' | 'inactive' | 'error';
+  status: 'active' | 'inactive' | 'error' | 'paused';
   createdAt: Date;
   updatedAt: Date;
   prompt?: string;

@@ -129,4 +129,14 @@ export class TmuxManager {
       throw new Error(`Failed to list tmux windows: ${(error as ExecaError).message}`);
     }
   }
+
+  async attachSession(sessionName: string): Promise<void> {
+    try {
+      await execa('tmux', ['attach-session', '-t', sessionName], {
+        stdio: 'inherit'
+      });
+    } catch (error) {
+      throw new Error(`Failed to attach to tmux session: ${(error as ExecaError).message}`);
+    }
+  }
 }

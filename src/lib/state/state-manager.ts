@@ -11,7 +11,7 @@ const AgentSessionSchema = z.object({
   port: z.number(),
   worktreePath: z.string(),
   tmuxSession: z.string(),
-  status: z.enum(['active', 'inactive', 'error']),
+  status: z.enum(['active', 'inactive', 'error', 'paused']),
   createdAt: z.string().transform(str => new Date(str)),
   updatedAt: z.string().transform(str => new Date(str)),
   prompt: z.string().optional(),
