@@ -1,0 +1,5 @@
+[install]
+production = false
+
+[test]
+preload = ["./src/test/setup.ts"]

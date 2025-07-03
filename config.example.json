@@ -1,0 +1,12 @@
+{
+  "claude": {
+    "binaryPath": "claude",
+    "defaultModel": "sonnet",
+    "maxConcurrentSessions": 5,
+    "defaultArgs": [
+      "--output-format", "stream-json",
+      "--verbose",
+      "--dangerously-skip-permissions"
+    ]
+  }
+}
