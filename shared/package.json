@@ -1,0 +1,10 @@
+{
+  "name": "@maestro/shared",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "main": "index.ts",
+  "exports": {
+    "./hooks": "./hooks/index.ts"
+  }
+}

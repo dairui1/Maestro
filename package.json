@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "name": "maestro",
+  "version": "1.0.0",
+  "description": "",
+  "packageManager": "pnpm@10.12.4",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "shared"
+  ],
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "lint": "turbo run lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
